@@ -11212,6 +11212,7 @@ body {
 .slider-container {
     width: 80%;
     max-width: 800px;
+    height:1000px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -11225,8 +11226,9 @@ body {
 }
 
     .slider img {
-        width: 100%;
-        border-radius: 10px;
+        width: 80%;
+        border-radius: 20px;
+        object-fit:cover;
     }
 
 /* Controles del slider */
