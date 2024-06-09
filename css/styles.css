@@ -11212,7 +11212,7 @@ body {
 .slider-container {
     width: 80%;
     max-width: 800px;
-    height:1000px;
+    height:800px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
