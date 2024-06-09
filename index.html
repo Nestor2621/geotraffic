@@ -126,9 +126,24 @@
         <!-- Projects-->
         <section class="projects-section bg-light" id="projects">
             <div class="container px-4 px-lg-5">
-                <!-- Featured Project Row-->
+                <div class="slider-container">                    
+                    <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7">
+                        <div class="slider">
+                            <img src="./media/slider/imagen1.jpg" alt="Imagen 1">
+                            <img src="./media/slider/imagen2.jpg" alt="Imagen 2">
+                            <img src="./media/slider/imagen3.jpg" alt="Imagen 3">
+                        </div>
+                        <button class="control control-prev"></button>
+                        <button class="control control-next"></button>
+                        <div class="indicators">
+                            <div class="indicator active" data-index="0"></div>
+                            <div class="indicator" data-index="1"></div>
+                            <div class="indicator" data-index="2"></div>
+                        </div>
+                    </div>
+                    </div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Shoreline</h4>
@@ -184,7 +199,7 @@
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                        <h2 class="text-white mb-5">¡Deseo recibir información!</h2>
                         <!-- * * * * * * * * * * * * * * *-->
                         <!-- * * SB Forms Contact Form * *-->
                         <!-- * * * * * * * * * * * * * * *-->
@@ -195,8 +210,8 @@
                         <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
                             <!-- Email address input-->
                             <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
+                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Ingresa tu dirección de correo electrónico" aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Contáctame!</button></div>
                             </div>
                             <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
                             <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
@@ -230,9 +245,9 @@
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Address</h4>
+                                <h4 class="text-uppercase m-0">Ubicación</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                                <div class="small text-black-50">Bogotá D.C • Calle 52A #9-31 oficina 303</div>
                             </div>
                         </div>
                     </div>
@@ -242,7 +257,7 @@
                                 <i class="fas fa-envelope text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Email</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
+                                <div class="small text-black-50"><a href="#!">Gerencia@geografficsas.com<br />info@geografficsas.com</a></div>
                             </div>
                         </div>
                     </div>
@@ -250,9 +265,13 @@
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <h4 class="text-uppercase m-0">Contacto</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">+1 (555) 902-8832</div>
+                                <div class="small text-black-50">
+                                    +57-1-310 812 6288 <br />Subdirección Tráfico Inteligente y Movilidad Sostenible<br />
+                                    +57-1-312 582 4694 <br />Subdirección Ingeniería Vial y Obras Civiles<br />
+                                    +57-1-300 696 6882 <br />Subdirección TICS y Ambiente
+                                </div<br />
                             </div>
                         </div>
                     </div>

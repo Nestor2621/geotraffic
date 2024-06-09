@@ -11207,3 +11207,74 @@ body {
     border-radius: 50%; /* Crea una forma redonda */
     background-color:#64a19d;
 }
+
+/* Estilo básico del slider */
+.slider-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+    .slider img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+/* Controles del slider */
+.control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.control-prev {
+    left: 10px;
+}
+
+.control-next {
+    right: 10px;
+}
+
+.control:focus {
+    outline: none;
+}
+
+/* Indicadores de slider */
+.indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .indicator.active {
+        background-color: rgba(255, 255, 255, 1);
+    }

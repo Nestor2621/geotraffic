@@ -52,3 +52,56 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+  // Seleccionar elementos
+        const slider = document.querySelector('.slider');
+        const images = document.querySelectorAll('.slider img');
+        const prevBtn = document.querySelector('.control-prev');
+        const nextBtn = document.querySelector('.control-next');
+        const indicators = document.querySelectorAll('.indicator');
+
+        let currentIndex = 0;
+
+        // Función para mover al siguiente slide
+        function nextSlide() {
+            if (currentIndex < images.length - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0; // Volver al primer slide si hemos llegado al final
+            }
+            updateSlider();
+        }
+
+        // Función para mover al slide anterior
+        function prevSlide() {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = images.length - 1; // Volver al último slide si estamos al principio
+            }
+            updateSlider();
+        }
+
+        // Actualizar el slider y los indicadores
+        function updateSlider() {
+            const offset = -currentIndex * 100; // Calcular el desplazamiento necesario
+            slider.style.transform = `translateX(${offset}%)`;
+            indicators.forEach((indicator, index) => {
+                if (index === currentIndex) {
+                    indicator.classList.add('active');
+                } else {
+                    indicator.classList.remove('active');
+                }
+            });
+        }
+
+        // Eventos de clic para los botones de control
+        prevBtn.addEventListener('click', prevSlide);
+        nextBtn.addEventListener('click', nextSlide);
+
+        // Eventos de clic para los indicadores
+        indicators.forEach(indicator => {
+            indicator.addEventListener('click', () => {
+                currentIndex = parseInt(indicator.getAttribute('data-index'));
+                updateSlider();
+            });
+        });
