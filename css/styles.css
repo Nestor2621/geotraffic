@@ -11201,3 +11201,9 @@ body {
 .footer {
   padding: 5rem 0;
 }
+.icono-redondo {
+    width: 140px; /* Ajusta el ancho según las dimensiones de la imagen */
+    height: 120px; /* Ajusta la altura según las dimensiones de la imagen */
+    border-radius: 50%; /* Crea una forma redonda */
+    background-color:#64a19d;
+}
